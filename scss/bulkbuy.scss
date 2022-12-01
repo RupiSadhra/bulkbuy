@@ -1,0 +1,63 @@
+$border-color: #00553D;
+$text-color-dark: #000000;
+$text-color-green: #00553D;
+
+.BulkBuy {
+    width: 50%;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid $border-color;
+    border-radius: 20px;
+    padding: 2rem;
+
+    &__product {
+        &-title {
+            color: $text-color-dark;
+            font-size: 1.875rem;
+            font-weight: 600;
+            line-height: 1.5;
+            margin: 0;
+        }
+    
+        &-info {
+            margin-top: 2rem;
+    
+            &-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 2rem;
+            }
+        }
+    
+        &-details-ctn {
+            font-size: 1rem;
+            color: $text-color-dark;
+            margin: 0;
+        }
+    }
+
+    &__price {
+        color: $text-color-green;
+        font-size: 2.813rem;
+        font-weight: 600;
+
+        &-qty-ctn {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-text {
+            font-size: 1rem;
+            font-weight: 400;
+            vertical-align: super;
+        }
+    }
+
+    &__savings-offer {
+        grid-column: -1/1;
+    }
+}

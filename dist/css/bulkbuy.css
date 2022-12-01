@@ -1,0 +1,49 @@
+.BulkBuy {
+  width: 50%;
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid #00553D;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.BulkBuy__product-title {
+  color: #000000;
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+}
+.BulkBuy__product-info {
+  margin-top: 2rem;
+}
+.BulkBuy__product-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.BulkBuy__product-details-ctn {
+  font-size: 1rem;
+  color: #000000;
+  margin: 0;
+}
+.BulkBuy__price {
+  color: #00553D;
+  font-size: 2.813rem;
+  font-weight: 600;
+}
+.BulkBuy__price-qty-ctn {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.BulkBuy__price-text {
+  font-size: 1rem;
+  font-weight: 400;
+  vertical-align: super;
+}
+.BulkBuy__savings-offer {
+  grid-column: -1/1;
+}/*# sourceMappingURL=bulkbuy.css.map */
