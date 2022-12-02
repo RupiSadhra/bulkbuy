@@ -1,12 +1,15 @@
-$border-color: #00553D;
+$border-color-green: #00553D;
+$border-color-grey: #969696;
 $text-color-dark: #000000;
 $text-color-green: #00553D;
+$text-color-orange: #F8971D;
+$text-color-grey: #969696;
 
 .BulkBuy {
     width: 50%;
     margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: 1px solid $border-color;
+    border: 1px solid $border-color-green;
     border-radius: 20px;
     padding: 2rem;
 
@@ -42,12 +45,13 @@ $text-color-green: #00553D;
         font-weight: 600;
 
         &-qty-ctn {
-            margin-top: 2rem;
+            padding: 1.5rem 0;
             display: grid;
             grid-template-columns: 2fr 1fr;
             grid-gap: 1rem;
             justify-content: center;
             align-items: center;
+            border-bottom: 1px solid $border-color-grey;
         }
 
         &-text {
@@ -57,7 +61,61 @@ $text-color-green: #00553D;
         }
     }
 
-    &__savings-offer {
-        grid-column: -1/1;
+    &__savings {
+        &-offer {
+            grid-column: -1/1;
+
+            p {
+                margin: 0;
+            }
+        }  
+        
+        &-price {
+            color: $text-color-orange;
+            font-weight: 600;
+            line-height: 1.25;
+            font-size: 1rem;
+        }
+
+        &-shareholder-price, &-offer-end-date {
+            color: $text-color-grey;
+            font-size: 0.875rem;
+            line-height: 1.46;
+        }
+    }
+
+    &__deal-end-date {
+        color: $text-color-green;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    &__unit-pricing{
+        margin-top: 3rem;
+        border: 1px solid $border-color-green;
+        border-radius: 13px; 
+        border-spacing: 0;
+       
+        td, th{
+            border-bottom: 1px solid $border-color-green;
+            border-right: 1px solid $border-color-green;
+            padding: 10px; 
+            font-weight: 600;
+            color: $text-color-green;
+
+            p{
+                margin: 0;
+            }
+        }
+
+        tr:last-child > td {
+            border-bottom: none;
+        }
+
+        tr > td:last-child {
+            border-right: none; 
+        }
     }
 }

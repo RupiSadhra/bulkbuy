@@ -32,12 +32,13 @@
   font-weight: 600;
 }
 .BulkBuy__price-qty-ctn {
-  margin-top: 2rem;
+  padding: 1.5rem 0;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 1rem;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #969696;
 }
 .BulkBuy__price-text {
   font-size: 1rem;
@@ -46,4 +47,47 @@
 }
 .BulkBuy__savings-offer {
   grid-column: -1/1;
+}
+.BulkBuy__savings-offer p {
+  margin: 0;
+}
+.BulkBuy__savings-price {
+  color: #F8971D;
+  font-weight: 600;
+  line-height: 1.25;
+  font-size: 1rem;
+}
+.BulkBuy__savings-shareholder-price, .BulkBuy__savings-offer-end-date {
+  color: #969696;
+  font-size: 0.875rem;
+  line-height: 1.46;
+}
+.BulkBuy__deal-end-date {
+  color: #00553D;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.BulkBuy__unit-pricing {
+  margin-top: 3rem;
+  border: 1px solid #00553D;
+  border-radius: 13px;
+  border-spacing: 0;
+}
+.BulkBuy__unit-pricing td, .BulkBuy__unit-pricing th {
+  border-bottom: 1px solid #00553D;
+  border-right: 1px solid #00553D;
+  padding: 10px;
+  font-weight: 600;
+  color: #00553D;
+}
+.BulkBuy__unit-pricing td p, .BulkBuy__unit-pricing th p {
+  margin: 0;
+}
+.BulkBuy__unit-pricing tr:last-child > td {
+  border-bottom: none;
+}
+.BulkBuy__unit-pricing tr > td:last-child {
+  border-right: none;
 }/*# sourceMappingURL=bulkbuy.css.map */
