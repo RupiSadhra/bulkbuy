@@ -1,6 +1,6 @@
 .BulkBuy {
-  width: 50%;
-  margin: auto;
+  width: 70%;
+  margin-left: auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border: 1px solid #00553D;
   border-radius: 20px;
@@ -25,6 +25,9 @@
   font-size: 1rem;
   color: #000000;
   margin: 0;
+}
+.BulkBuy__product-image {
+  width: 100%;
 }
 .BulkBuy__price {
   color: #00553D;
@@ -69,25 +72,40 @@
   font-size: 1.5rem;
   line-height: 1.5;
 }
-.BulkBuy__unit-pricing {
+.BulkBuy__tier {
+  width: 100%;
   margin-top: 3rem;
   border: 1px solid #00553D;
-  border-radius: 13px;
+  border-radius: 20px;
   border-spacing: 0;
+  background-color: rgba(150, 150, 150, 0.7);
 }
-.BulkBuy__unit-pricing td, .BulkBuy__unit-pricing th {
+.BulkBuy__tier td, .BulkBuy__tier th {
   border-bottom: 1px solid #00553D;
   border-right: 1px solid #00553D;
   padding: 10px;
   font-weight: 600;
   color: #00553D;
-}
-.BulkBuy__unit-pricing td p, .BulkBuy__unit-pricing th p {
   margin: 0;
 }
-.BulkBuy__unit-pricing tr:last-child > td {
+.BulkBuy__tier td p, .BulkBuy__tier th p {
+  margin: 0;
+}
+.BulkBuy__tier tr:last-child > td {
   border-bottom: none;
 }
-.BulkBuy__unit-pricing tr > td:last-child {
+.BulkBuy__tier tr > td:last-child {
   border-right: none;
+}
+.BulkBuy__tier tr > td:first-child {
+  background-color: white;
+  border-radius: 20px 0 0 0;
+}
+.BulkBuy__tier tr:last-child > td:first-child {
+  border-radius: 0 0 0 20px;
+}
+.BulkBuy__active-tier {
+  background-color: #00553D;
+  color: white !important;
+  border-bottom-color: white !important;
 }/*# sourceMappingURL=bulkbuy.css.map */

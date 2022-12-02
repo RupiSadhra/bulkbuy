@@ -6,8 +6,8 @@ $text-color-orange: #F8971D;
 $text-color-grey: #969696;
 
 .BulkBuy {
-    width: 50%;
-    margin: auto;
+    width: 70%;
+    margin-left: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px solid $border-color-green;
     border-radius: 20px;
@@ -37,6 +37,10 @@ $text-color-grey: #969696;
             color: $text-color-dark;
             margin: 0;
         }
+
+        &-image {
+            width: 100%;
+        }    
     }
 
     &__price {
@@ -92,11 +96,13 @@ $text-color-grey: #969696;
         line-height: 1.5;
     }
 
-    &__unit-pricing{
+    &__tier {
+        width: 100%;
         margin-top: 3rem;
         border: 1px solid $border-color-green;
-        border-radius: 13px; 
+        border-radius: 20px; 
         border-spacing: 0;
+        background-color: rgba(150, 150, 150, 0.7);
        
         td, th{
             border-bottom: 1px solid $border-color-green;
@@ -104,7 +110,8 @@ $text-color-grey: #969696;
             padding: 10px; 
             font-weight: 600;
             color: $text-color-green;
-
+            margin: 0;
+            
             p{
                 margin: 0;
             }
@@ -117,5 +124,20 @@ $text-color-grey: #969696;
         tr > td:last-child {
             border-right: none; 
         }
+
+        tr > td:first-child {
+            background-color: white; 
+            border-radius: 20px 0 0 0;
+        }
+
+        tr:last-child > td:first-child {
+            border-radius: 0 0 0 20px;
+        }
+    }
+
+    &__active-tier {
+        background-color: $text-color-green;
+        color:white !important;
+        border-bottom-color: white !important;
     }
 }
