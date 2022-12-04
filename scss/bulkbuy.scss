@@ -1,143 +1,143 @@
-$border-color-green: #00553D;
-$border-color-grey: #969696;
-$text-color-dark: #000000;
-$text-color-green: #00553D;
-$text-color-orange: #F8971D;
-$text-color-grey: #969696;
+$color-black: #000000;
+$color-green: #00553d;
+$color-orange: #f8971d;
+$color-grey: #969696;
 
 .BulkBuy {
-    width: 70%;
-    margin-left: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: 1px solid $border-color-green;
+  width: 70%;
+  margin-left: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid $color-green;
+  border-radius: 20px;
+  padding: 2rem;
+
+  &__product {
+    &-title {
+      color: $color-black;
+      font-size: 1.875rem;
+      font-weight: 600;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    &-info {
+      margin-top: 2rem;
+
+      &-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+      }
+    }
+
+    &-details-ctn {
+      font-size: 1rem;
+      color: $color-black;
+      margin: 0;
+    }
+
+    &-image {
+      width: 100%;
+    }
+  }
+
+  &__price {
+    color: $color-green;
+    font-size: 2.813rem;
+    font-weight: 600;
+
+    &-qty-ctn {
+      padding: 1.5rem 0;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid $color-grey;
+    }
+
+    &-text {
+      font-size: 1rem;
+      font-weight: 400;
+      vertical-align: super;
+    }
+  }
+
+  &__savings {
+    &-offer {
+      grid-column: -1/1;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    &-price {
+      color: $color-orange;
+      font-weight: 600;
+      line-height: 1.25;
+      font-size: 1rem;
+    }
+
+    &-shareholder-price,
+    &-offer-end-date {
+      color: $color-grey;
+      font-size: 0.875rem;
+      line-height: 1.46;
+    }
+  }
+
+  &__deal-end-date {
+    color: $color-green;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  &__tier {
+    width: 100%;
+    margin-top: 3rem;
+    border: 1px solid $color-green;
     border-radius: 20px;
-    padding: 2rem;
+    border-spacing: 0;
+    background-color: rgba(150, 150, 150, 0.7);
 
-    &__product {
-        &-title {
-            color: $text-color-dark;
-            font-size: 1.875rem;
-            font-weight: 600;
-            line-height: 1.5;
-            margin: 0;
-        }
-    
-        &-info {
-            margin-top: 2rem;
-    
-            &-grid {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-gap: 2rem;
-            }
-        }
-    
-        &-details-ctn {
-            font-size: 1rem;
-            color: $text-color-dark;
-            margin: 0;
-        }
+    td,
+    th {
+      border-bottom: 1px solid $color-green;
+      border-right: 1px solid $color-green;
+      padding: 10px;
+      font-weight: 600;
+      color: $color-green;
+      margin: 0;
 
-        &-image {
-            width: 100%;
-        }    
+      p {
+        margin: 0;
+      }
     }
 
-    &__price {
-        color: $text-color-green;
-        font-size: 2.813rem;
-        font-weight: 600;
-
-        &-qty-ctn {
-            padding: 1.5rem 0;
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            grid-gap: 1rem;
-            justify-content: center;
-            align-items: center;
-            border-bottom: 1px solid $border-color-grey;
-        }
-
-        &-text {
-            font-size: 1rem;
-            font-weight: 400;
-            vertical-align: super;
-        }
+    tr:last-child > td {
+      border-bottom: none;
     }
 
-    &__savings {
-        &-offer {
-            grid-column: -1/1;
-
-            p {
-                margin: 0;
-            }
-        }  
-        
-        &-price {
-            color: $text-color-orange;
-            font-weight: 600;
-            line-height: 1.25;
-            font-size: 1rem;
-        }
-
-        &-shareholder-price, &-offer-end-date {
-            color: $text-color-grey;
-            font-size: 0.875rem;
-            line-height: 1.46;
-        }
+    tr > td:last-child {
+      border-right: none;
     }
 
-    &__deal-end-date {
-        color: $text-color-green;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 1.5rem;
-        line-height: 1.5;
+    tr > td:first-child {
+      background-color: white;
+      border-radius: 20px 0 0 0;
     }
 
-    &__tier {
-        width: 100%;
-        margin-top: 3rem;
-        border: 1px solid $border-color-green;
-        border-radius: 20px; 
-        border-spacing: 0;
-        background-color: rgba(150, 150, 150, 0.7);
-       
-        td, th{
-            border-bottom: 1px solid $border-color-green;
-            border-right: 1px solid $border-color-green;
-            padding: 10px; 
-            font-weight: 600;
-            color: $text-color-green;
-            margin: 0;
-            
-            p{
-                margin: 0;
-            }
-        }
-
-        tr:last-child > td {
-            border-bottom: none;
-        }
-
-        tr > td:last-child {
-            border-right: none; 
-        }
-
-        tr > td:first-child {
-            background-color: white; 
-            border-radius: 20px 0 0 0;
-        }
-
-        tr:last-child > td:first-child {
-            border-radius: 0 0 0 20px;
-        }
+    tr:last-child > td:first-child {
+      border-radius: 0 0 0 20px;
     }
+  }
 
-    &__active-tier {
-        background-color: $text-color-green;
-        color:white !important;
-        border-bottom-color: white !important;
-    }
+  &__active-tier {
+    background-color: $color-green;
+    color: white !important;
+    border-bottom-color: white !important;
+  }
 }
